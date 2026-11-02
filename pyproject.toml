@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smallbiz-analysis-public"
+version = "0.1.0"
+description = "소상공인 프로젝트의 공개용 분석 코드와 합성 데이터 예제"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "scipy>=1.12,<2",
+  "statsmodels>=0.14,<0.15",
+  "beautifulsoup4>=4.12,<5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
